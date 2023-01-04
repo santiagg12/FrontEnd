@@ -4,14 +4,17 @@
     align-items: center;
 }
 #logoAP { 
-width: 150px;
+width: 110px;
 margin-left: 1em;
+
 }
-img{
-    width: 45px;
-    margin-right: .5em;
+#nave{ display: flex;
+        align-items: center;
+    margin-right: 1em;
+    flex-direction: row;
 }
-.redes{
+li{
+    display: flex;
     margin-right: 1em;
 }
 /*--- celular---*/
@@ -27,3 +30,4 @@ img{
 .redes img{
     margin: 0.3em;
 }}
+

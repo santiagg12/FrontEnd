@@ -1,8 +1,21 @@
+.row{
+    background: linear-gradient(60deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
+    color:white;}
 
 footer{
-    display: flex;
-    flex-direction:column;
+    
     text-align: center;   
     letter-spacing: 3px;
     padding: 20px;
 }
+
+img{
+    width: 45px;
+    margin-right: .5em;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;}
+    

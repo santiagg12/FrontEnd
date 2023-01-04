@@ -1,18 +1,21 @@
 .row{
-    padding:20px;
+    padding:50px;
     background: linear-gradient(60deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
     color:white;
 }
 h1{
   font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:40px;
   text-align: center;
-  font-size: 40px;
+  
 }
 h2,h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight:300;
-    letter-spacing: 2px;
-    font-size:35px;
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:30px;
     display:inline;
   }
   p{
