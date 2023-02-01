@@ -1,8 +1,12 @@
 <div id="HyS" class="row"> 
     <h1>Hard and soft skills</h1>
+
+    <div class="col-lg-2">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
 <div class=" text-center col-sm-4 col-md-4 col-lg-3">
         <circle-progress
-        [percent]="85"
+        [percent]="(skill.porcentaje)"
         [radius]="90"
         [outerStrokeWidth]="10"
         [innerStrokeWidth]="4"
@@ -11,7 +15,11 @@
         [animation]="true"
         [animationDuration]="500"
         [lazy]="true"
-        [imageSrc]="'../../../assets/logos2/logojs.png'"
+
+        [titleColor]="'#212F3c'"
+        [imageSrc]="'../../../assets/logos2/logojs.png'"   
+        [title]="(skill.nombre)"
+
         [showImage]="true"
         [imageWidth]="50"
         [imageHeight]="50"
@@ -22,6 +30,17 @@
         [outerStrokeGradientStopColor]="'#79bafb'"
         
     ></circle-progress>
+
+    <td *ngIf="isLogged">
+        <button class="btn btn-danger" routerLink="/edithys/{{skill.id}}">
+            <i class="bi bi-trash3-fill"></i>
+        </button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash3-fill"></i> 
+        </button>
+    
     </div>
 
 <div class="text-center col-sm-4 col-md-4 col-lg-3">

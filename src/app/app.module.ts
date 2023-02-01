@@ -21,6 +21,9 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { NeweducacionComponent } from './components/proyecto/neweducacion.component';
 import { EditeducacionComponent } from './components/proyecto/editeducacion.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
+
 
 
 
@@ -42,7 +45,10 @@ import { EditeducacionComponent } from './components/proyecto/editeducacion.comp
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    
     
   ],
   imports: [
