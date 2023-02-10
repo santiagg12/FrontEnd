@@ -2,7 +2,7 @@
  <h1> Experiencia laboral</h1>
  <div class="col-log-2">
  
-    <button type="button" routerLink="/nuevaexp" *ngIf="isLogged"> 
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"> 
         Nueva experiencia
     </button></div>
     <!--<ul><li><h2>Empleado de comercio </h2> <h3>2020 - Actualidad</h3></li>
@@ -19,7 +19,7 @@
 
         <td *ngIf="isLogged">
         <button class="btn btn-danger" routerLink="/editexp/{{Experiencia.id}}">
-            <i class="bi bi-trash3-fill"></i> EDITAR
+            <i class="bi bi-pencil-fill"></i> EDITAR
         </button>
         </td>
         <td *ngIf="isLogged">

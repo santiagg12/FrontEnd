@@ -27,6 +27,7 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
 
 
 
+
  
 
 @NgModule({
@@ -48,6 +49,7 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    
     
     
   ],

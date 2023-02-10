@@ -6,7 +6,6 @@
     </div>
 <div class=" text-center col-sm-4 col-md-4 col-lg-3">
         <circle-progress
-        [percent]="(skill.porcentaje)"
         [radius]="90"
         [outerStrokeWidth]="10"
         [innerStrokeWidth]="4"
@@ -16,11 +15,13 @@
         [animationDuration]="500"
         [lazy]="true"
 
-        [titleColor]="'#212F3c'"
-        [imageSrc]="'../../../assets/logos2/logojs.png'"   
-        [title]="(skill.nombre)"
+        [showTitle]="true"
+        [titleColor]="'#212F3C'"
+        [imageSrc]="''"   
+                              [title]="skill[0].nombre"
+                              [percent]="skill[0].porcentaje"
+        [showImage]="false"
 
-        [showImage]="true"
         [imageWidth]="50"
         [imageHeight]="50"
         [backgroundGradient]="true"
@@ -32,17 +33,18 @@
     ></circle-progress>
 
     <td *ngIf="isLogged">
-        <button class="btn btn-danger" routerLink="/edithys/{{skill.id}}">
-            <i class="bi bi-trash3-fill"></i>
+                                <button class="btn btn-dark" routerLink="/editskill/{{skill[0].id}}">
+            <i class="bi bi-pencil-fill"></i>
         </button>
         </td>
         <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(skill.id)">
+                                <button class="btn btn-danger" (click)="delete(skill[0].id)">
                 <i class="bi bi-trash3-fill"></i> 
-        </button>
+        </button></td>
     
     </div>
-
+    </div>
+<!--
 <div class="text-center col-sm-4 col-md-4 col-lg-3">
     <circle-progress
     [percent]="85"
@@ -203,5 +205,4 @@
     [outerStrokeGradientStopColor]="'#79bafb'"
     
 ></circle-progress>
-</div>
-</div>
+</div> --> 
