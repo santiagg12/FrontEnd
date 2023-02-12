@@ -4,8 +4,17 @@
     <div class="col-lg-2">
         <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
     </div>
-<div class=" text-center col-sm-4 col-md-4 col-lg-3">
-        <circle-progress
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+        <circle-progress 
+        [percent]="(skill.porcentaje)" 
+       
+        [imageSrc]="''" 
+        [title]="(skill.nombre)"
+        
+        [showTitle]="true" 
+        [showImage]="false" 
+
         [radius]="90"
         [outerStrokeWidth]="10"
         [innerStrokeWidth]="4"
@@ -15,13 +24,9 @@
         [animationDuration]="500"
         [lazy]="true"
 
-        [showTitle]="true"
+       
         [titleColor]="'#212F3C'"
-        [imageSrc]="''"   
-                              [title]="skill[0].nombre"
-                              [percent]="skill[0].porcentaje"
-        [showImage]="false"
-
+                                            [percent]="(skill.porcentaje)"
         [imageWidth]="50"
         [imageHeight]="50"
         [backgroundGradient]="true"
@@ -30,20 +35,20 @@
         [outerStrokeGradient]="true"
         [outerStrokeGradientStopColor]="'#79bafb'"
         
-    ></circle-progress>
+    > </circle-progress>
 
-    <td *ngIf="isLogged">
-                                <button class="btn btn-dark" routerLink="/editskill/{{skill[0].id}}">
-            <i class="bi bi-pencil-fill"></i>
-        </button>
+    <div>
+        <td *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
         </td>
         <td *ngIf="isLogged">
-                                <button class="btn btn-danger" (click)="delete(skill[0].id)">
-                <i class="bi bi-trash3-fill"></i> 
-        </button></td>
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </td>
+    </div>
     
-    </div>
-    </div>
+</div>
 <!--
 <div class="text-center col-sm-4 col-md-4 col-lg-3">
     <circle-progress
