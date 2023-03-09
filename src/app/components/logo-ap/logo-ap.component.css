@@ -21,8 +21,8 @@ margin-left: 1em;
 }
 .redes{
     display:flex;
-    
     align-items:center;
+    
 }
 .redes img{
     margin: 0.3em;
@@ -125,3 +125,148 @@ margin-left: 1em;
     -ms-transition: background 2s;
     -o-transition: background 2s;
 }
+
+/* 
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logoAP { 
+  width: 110px;
+  margin-left: 1em;
+}
+
+#nave{ 
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  flex-direction: row;
+}
+
+
+@media(max-width:575px){
+  .container{
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .redes{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  #menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-icon__line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    transition: transform 0.3s ease-in-out;
+    background-color: #000;
+  }
+  
+  .redes ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .redes ul li {
+    margin: 0;
+    padding: 15px 0;
+  }
+  
+  .redes ul li a {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .show-menu ul {
+    display: block;
+  }
+  
+  .show-menu .menu-icon__line:nth-of-type(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  
+  .show-menu .menu-icon__line:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .show-menu .menu-icon__line:nth-of-type(3) {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+} 
+
+li{
+  margin-right: 2em;
+  --primary-color: rgb(255, 255, 255);
+  --hovered-color: #0e0202;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+li a {
+  margin: 0;
+  position: relative;
+  font-size: 15px;
+  color: var(--primary-color)
+}
+
+li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+li a::before {
+  position: absolute;
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+li:hover a::before {
+  width: 100%;
+}
+
+button {
+  --color: #3c53bb;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  line-height: 2.5em;    
+  position: relative;
+  overflow: hidden;   
+  transition: color .5s;
+  z-index: 1;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: 450;
+  color:white }
+  
