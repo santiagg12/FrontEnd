@@ -3,7 +3,6 @@
 <div class="Logo">
     <img src="../../../assets/Logos/APLogo.png" id="logoAP">
 </div>
-
 <div class="redes">
      
         <div class="collapse navbar-collapse" ></div>
@@ -30,39 +29,42 @@
 </div>
     </div>
 </div>
-<!-- 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../../../assets/Logos/APLogo.png" id="logoAP">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRedes" aria-controls="navbarRedes" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarRedes">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger lead" href="#about">Acerca de mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#HyS">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#experience">Experiencias/estudios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger lead" href="#contact">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
+
+
+<header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="../../../assets/Logos/APLogo.png" alt="logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-navbar active" aria-current="page" href="#about">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-navbar" href="#HyS">Skills</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link btn btn-navbar" href="#experience">Experiencias/estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  btn btn-navbar" href="#contact">Contacto</a>
+                        </li>
+                        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+            
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
   
   
 
