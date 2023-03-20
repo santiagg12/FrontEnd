@@ -2,8 +2,8 @@
  <h1> Experiencia laboral</h1>
  <div class="col-log-2">
  
-    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"> 
-        Nueva experiencia
+    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged" id="agregar"> 
+        <strong>+</strong>
     </button></div>
     <!--<ul><li><h2>Empleado de comercio </h2> <h3>2020 - Actualidad</h3></li>
         <p>Atención al público, manejo de caja y administración de mercadería.</p> </ul>
@@ -18,13 +18,13 @@
         <td>{{Experiencia.descripcionE}}</td>
 
         <td *ngIf="isLogged">
-        <button class="btn btn-danger" routerLink="/editexp/{{Experiencia.id}}">
-            <i class="bi bi-pencil-fill"></i> EDITAR
+        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+            <i class="bi bi-pencil-fill"></i>
         </button>
         </td>
         <td *ngIf="isLogged">
             <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                <i class="bi bi-trash3-fill"></i> BORRAR
+                <i class="bi bi-trash3-fill"></i>
         </button>
     </tr>
 </tbody>

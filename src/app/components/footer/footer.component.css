@@ -1,21 +1,39 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
 .row{
     background: linear-gradient(60deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
-    color:white;}
+    color:white;
+
+}
 
 footer{
-    
-    text-align: center;   
-    letter-spacing: 3px;
-    padding: 20px;
+    text-align: center;       
 }
 
 img{
-    width: 45px;
+    margin-top: 1rem;
+    width: 40px;
     margin-right: .5em;
 }
 .redes{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1em;}
+   }
+  p>a {
+    display: inline-block;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 1.4rem;
+  
     
+}

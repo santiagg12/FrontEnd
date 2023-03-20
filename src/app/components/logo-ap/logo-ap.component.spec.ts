@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import * as $ from 'jquery';
+
 
 import { LogoAPComponent } from './logo-ap.component';
 

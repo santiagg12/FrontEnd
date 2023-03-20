@@ -1,6 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
 
-
+* {
+    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight:300;
@@ -72,17 +79,41 @@ h1 {
 }
 /*Shrinking for mobile*/
 @media (max-width: 575px) {
+    .inner-header p {
+      font-size: 20px;
+    }
   .waves {
     height:70px;
     min-height:40px;
   }
   .content {
     height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   h1{font-family: 'Lato', sans-serif;
   font-weight:300;
   letter-spacing: 2px;
   font-size:30px;}
+  .spinner {
+    width: 20px;
+    height: 20px;
+    display: grid;
+    margin-left: 2.5rem;
+ }
+ .spinner::before,
+.spinner::after {
+   content: "";
+   grid-area: 1/1;
+   background: var(--c) 50%  0,         var(--c) 50%  100%,         var(--c) 100% 50%,         var(--c) 0    50%;
+   background-size: 4px 4px;
+   background-repeat: no-repeat;
+   animation: spinner-3hs4a3 1.2s infinite;
+   -webkit-animation: spinner-3hs4a3 1.2s infinite;
+}
 }
 
 

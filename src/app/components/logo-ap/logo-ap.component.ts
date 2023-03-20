@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TokenService } from '../service/token.service';
+import * as $ from 'jquery';
+
 
 
 
@@ -18,6 +20,12 @@ ngOnInit(): void {
       }else {
         this.isLogged = false;
       }
+      $(document).ready(function() {
+        $('.navbar-toggler').click(function() {
+          $('.navbar-collapse').slideToggle(300);
+        });
+      });
+    
 
 }
 onLogOut():void{
@@ -27,4 +35,6 @@ onLogOut():void{
 login(){
   this.router.navigate(['/login'])
 }
+
+
 }

@@ -1,7 +1,7 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #logoAP { 
 width: 110px;
@@ -9,119 +9,101 @@ margin-left: 1em;
 
 }
 #nave{ display: flex;
-        align-items: center;
-    margin-right: 1em;
-    flex-direction: row;
+      align-items: center;
+  margin-right: 1em;
+  flex-direction: row;
 }
 
-/*--- celular---*/
+
 @media(max-width:575px){
 .container{
-    flex-direction:column;
+  flex-direction:column;
 }
 .redes{
-    display:flex;
-    
-    align-items:center;
+  display:flex;
+  align-items:center;
+  
 }
 .redes img{
-    margin: 0.3em;
+  margin: 0.3em;
 }}  
-  li{margin-right: 2em;
-    --primary-color: rgb(255, 255, 255);
-    --hovered-color: #0e0202;
-    position: relative;
-    display: flex;
-    font-weight: 600;
-    font-size: 15px;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  li a {
-    margin: 0;
-    position: relative;
-    font-size: 15px;
-    color: var(--primary-color)
-  }
-  
-  li::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
-  }
-  
-  li a::before {
-    position: absolute;
-          width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
-    overflow: hidden;
-    transition: 0.3s ease-out;
-  }
-  
-  li:hover::after {
-    width: 100%;
-  }
-  
-  li:hover a::before {
-    width: 100%;
-  }
-  
-  button {
-    --color: #3c53bb;
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    line-height: 2.5em;    
-    position: relative;
-    overflow: hidden;   
-    transition: color .5s;
-    z-index: 1;
-    font-size: 15px;
-    border-radius: 6px;
-    font-weight: 450;
-    color:white;
-   }
-   
-   button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+li{margin-right: 2em;
+  --primary-color: rgb(255, 255, 255);
+  --hovered-color: #0e0202;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  gap: 0.5rem;
+  align-items: center;
 }
-   
-   button:hover {
-    color: rgb(255, 255, 255);
-   }
-   
-   button:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
-   }
-   
-   button:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   button:active:before {
-    background: #3a0ca3;
-    transition: background 2s;
-    -webkit-transition: background 2s;
-    -moz-transition: background 2s;
-    -ms-transition: background 2s;
-    -o-transition: background 2s;
+
+li a {
+  margin: 0;
+  position: relative;
+  font-size: 15px;
+  color: var(--primary-color)
+}
+
+li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+li a::before {
+  position: absolute;
+        width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+li:hover a::before {
+  width: 100%;
+}
+*/
+
+
+.logo{
+  width: 110px;
+
+}
+
+.btn, .btn-outline-success, .btn:active, .btn:target{
+background-color: #8d90f270; /* adentro*/
+color: white; /* letras*/
+border: rgb(78, 155, 176) solid; /* borde*/
+text-transform: uppercase; /* letra*/
+}
+/* borde doble del nav*/
+.btn.active, .navbar-nav .nav-link.active {
+  background-color: #30073a8f;
+color: white;
+border: rgb(92, 186, 212) double;
+
+}
+.btn:hover{
+background-color: #4c125a8f;
+color:white;
+}
+.nav-link{
+padding: 0.25rem;
+}
+.navbar-toggler-icon {
+color: #e0046c;
+}
+#ing, #engre{
+  width: 150px;
+  background-color: #30073a8f;
 }

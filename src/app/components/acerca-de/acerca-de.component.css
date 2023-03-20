@@ -1,18 +1,24 @@
-
+* {
+    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
 .row{
     padding: 50px;
-    background: linear-gradient(60deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
-      color:white;
-      
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      display: flex;
+    background: linear-gradient(100deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
+    color:white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     }
-   #fotoPerfil{
+    #fotoPerfil{
     width: 200px;
     border-radius: 100%;
     box-shadow: 5px 5px 5px rgb(87, 85, 85);
@@ -27,4 +33,4 @@
     font-family: 'Lato', sans-serif;
   font-size:20px;
   display:grid;
-  }
+  } 

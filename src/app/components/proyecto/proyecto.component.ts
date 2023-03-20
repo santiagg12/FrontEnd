@@ -14,7 +14,6 @@ educacion: Educacion[]= [];
 constructor(private educacionS: EducacionService, private tokenService: TokenService){}
 isLogged = false;
 
-
 cargarEducacion(): void {
   this.educacionS.lista().subscribe(data => { this.educacion = data; })
 }
