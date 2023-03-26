@@ -62,7 +62,9 @@
     color:white;
     }
     @media (max-width: 576px) {
-      .about-mobile {
-      text-align: left;
+      #about .col-xs-12.col-sm-4.col-md-8.col-lg-12 span p {
+        width: 100%;
+        margin: 0;
+        text-align: justify;
       }
-      }
+    }
