@@ -1,91 +1,21 @@
 
 <div id="about"  class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"><img src="../../../assets/Logos/IMG_20220904_175218.png" id="fotoPerfil" class="img-fluid">
+    <div class="col-lg-12">
+        <div><h1>Acerca de mi</h1></div>
+        <button type="button" class="btn btn-dark" routerLink="/editacercade/{{persona.id}}" *ngIf="isLogged" id="editar">
+            <strong>Editar</strong>
+        </button>
+    <div class="ccol-xs-5 col-sm-5 col-md-6 col-lg-12"><img [src]="persona.img" id="fotoPerfil" class="img-fluid">
     </div>
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-12">
-        <h1 id="nombre"> {{persona.nombre}} {{persona.apellido}}</h1>
-        <h1>Full Stack Developer Jr</h1>
+        <h2 id="nombre"> {{persona.nombre}} {{persona.apellido}}</h2>
+        <h3>Full Stack Developer Jr</h3>
     </div>
     <div class="col-xs-12 col-sm-4 col-md-8 col-lg-12">
         <span>
-            <h1>Acerca de mi</h1>
-            <p>Soy estudiante de Ingeniería Industrial en la Universidad Tecnológica Nacional en la provincia de Mendoza. 
-                  Me considero una persona proactiva, con habilidades, conocimientos y una actitud decisiva frente a cualquier tipo de problema.
-                Mi objetivo es crecer profesionalmente logrando adquirir conocimientos y aptitudes que me formen como profesional.</p>
+             
+            <p>Me considero una persona proactiva, con habilidades, conocimientos y una actitud decisiva frente a cualquier tipo de problema.
+                Mi objetivo es crecer profesionalmente logrando adquirir conocimientos y aptitudes que me formen como profesional.</p> -->
         </span>
     </div>
 </div> 
-
-<!-- 
-<div class="row">
-    <h1>Educación</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" id="agregar">
-            <strong>+</strong>
-        </button>
-    </div>
-
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr >
-                    <td>
-                        <h2>loremakjfsd</h2>
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste harum dolor corporis hic quasi deserunt 
-                        veniam nisi, perspiciatis suscipit nihil quam? Exercitationem harum ipsam enim ducimus quia, repudiandae illo.</td>
-                    <td>
-                        <button class="btn btn-light">
-                            <i class="bi bi-pencil-fill"></i> </button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">
-                            <i class="bi bi-trash-fill"></i> </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table">
-            <tbody>
-                <tr >
-                    <td>
-                        <h2>loremakjfsd</h2>
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste harum dolor corporis hic quasi deserunt 
-                        veniam nisi, perspiciatis suscipit nihil quam? Exercitationem harum ipsam enim ducimus quia, repudiandae illo.</td>
-                    <td>
-                        <button class="btn btn-light">
-                            <i class="bi bi-pencil-fill"></i> </button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">
-                            <i class="bi bi-trash-fill"></i> </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table">
-            <tbody>
-                <tr >
-                    <td>
-                        <h2>loremakjfsd</h2>
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste harum dolor corporis hic quasi deserunt 
-                        veniam nisi, perspiciatis suscipit nihil quam? Exercitationem harum ipsam enim ducimus quia, repudiandae illo.</td>
-                    <td>
-                        <button class="btn btn-light">
-                            <i class="bi bi-pencil-fill"></i> </button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">
-                            <i class="bi bi-trash-fill"></i> </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-</div>
-
- -->

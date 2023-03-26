@@ -21,16 +21,48 @@
     #fotoPerfil{
     width: 200px;
     border-radius: 100%;
-    box-shadow: 5px 5px 5px rgb(87, 85, 85);
+    box-shadow: 5px 5px 5px rgb(234 232 232 / .5);
+    margin-top: 1rem;
 }
    h1 {
-    font-weight:300;
-    letter-spacing: 2px;
-    font-size:40px;
-    margin-top:15px;
+    text-decoration: underline;
+  text-decoration-thickness: 2px;
   }
   p {
     font-family: 'Lato', sans-serif;
-  font-size:20px;
   display:grid;
+  width: 54rem;
+  margin-left: 10rem;
   } 
+  
+
+  #fotoPerfil {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #fotoPerfil:hover {
+    transform: scale(1.1);
+  }
+
+  #editar{ 
+  background-color: #8d90f270; /* adentro*/
+  color: white; /* letras*/
+  border: rgb(78, 155, 176) solid;
+  text-transform: uppercase; /* letra*/
+  padding: 0.25rem;
+  width: 5rem;
+  margin: 1rem;
+  
+    }
+  #editar:hover{
+    background-color: #4c125a8f;
+    color:white;
+    }
+    @media (max-width: 576px) {
+      .about-mobile {
+      text-align: left;
+      }
+      }
