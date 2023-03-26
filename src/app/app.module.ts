@@ -11,7 +11,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -23,8 +23,7 @@ import { NeweducacionComponent } from './components/proyecto/neweducacion.compon
 import { EditeducacionComponent } from './components/proyecto/editeducacion.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
-
-
+import { EditacercadeComponent } from './components/acerca-de/editacercade.component';
 
 
 
@@ -49,11 +48,14 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditacercadeComponent,
+    
     
     
     
   ],
   imports: [
+  
     FormsModule,
     BrowserModule,
     AppRoutingModule,

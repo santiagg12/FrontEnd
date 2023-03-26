@@ -13,7 +13,8 @@
 }
 
 footer{
-    text-align: center;       
+    text-align: center;   
+    margin-bottom: 2rem;    
 }
 
 img{
@@ -28,12 +29,13 @@ img{
    }
   p>a {
     display: inline-block;
-    border: 2px solid black;
+   
     color: white;
     text-align: center;
-    margin-top: 1rem;
-    text-decoration: none;
-    border-radius: 1.4rem;
-  
+    margin-top: 1rem; 
     
 }
+#mail {
+    text-decoration: underline;
+  }
+  

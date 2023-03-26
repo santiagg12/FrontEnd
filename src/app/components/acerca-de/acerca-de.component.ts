@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { data } from 'jquery';
 import { persona } from '../model/persona.model';
 import { PersonaService } from '../service/persona.service';
+import { TokenService } from '../service/token.service';
 
 
 
@@ -10,11 +12,26 @@ import { PersonaService } from '../service/persona.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent  implements OnInit{
-  persona: persona = new persona("","","");
+  persona: persona = null;
   
-    constructor(public personaService: PersonaService){}
+    constructor(public personaService: PersonaService, private tokenService: TokenService){}
+    isLogged = false;
+
   ngOnInit(): void {
-   this.personaService.getPersona().subscribe(data =>{this.persona = data})
-    
+  
+    this.nuevaPersona();
+  
+  if(this.tokenService.getAuthorities().includes('ROLE_ADMIN')){
+    this.isLogged=true
+  }else{
+    this.isLogged=false
   }
+  }
+    
+  
+nuevaPersona(){
+  this.personaService.detail(1).subscribe(data =>
+    {this.persona=data})
+}
+
 }

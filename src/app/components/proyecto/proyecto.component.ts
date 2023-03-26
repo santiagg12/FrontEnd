@@ -20,13 +20,17 @@ cargarEducacion(): void {
 
 ngOnInit(): void {
   this.cargarEducacion();
-  if (this.tokenService.getToken()) {
-    this.isLogged = true;
-  } else {
-    this.isLogged = false;
-  }
+
+
+if(this.tokenService.getAuthorities().includes('ROLE_ADMIN')){
+  this.isLogged=true
+}else{
+  this.isLogged=false
 }
+}
+
 delete(id?: number){
+  if(confirm('Esta seguro que desea eliminar esta Educacion?')){
   if(id != undefined){
     this.educacionS.delete(id).subscribe(
       data => {
@@ -37,5 +41,5 @@ delete(id?: number){
     )
   }
 }
-
+}
 }

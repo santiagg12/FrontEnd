@@ -7,7 +7,7 @@
   
 }
 .row{
-
+  color:white;
     padding: 50px;
     background: linear-gradient(100deg, rgb(44, 31, 95) 0%, rgb(1, 92, 104) 100%);
     color:white;
@@ -28,3 +28,29 @@ h2,h3 {
   display: flex;
   
  }
+ 
+#agregar{
+  background-color: #8d90f270; /* adentro*/
+  color: white; /* letras*/
+  border: rgb(78, 155, 176) solid;
+  text-transform: uppercase; /* letra*/
+  padding: 0.25rem;
+  width: 5rem;
+  text-align: center;
+  margin: 1rem;
+  }
+  #agregar:hover{
+    background-color: #4c125a8f;
+    color:white;
+    }
+    h1{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+    
+
+#pencil{
+  padding-right: 2rem;
+}
+    
+   

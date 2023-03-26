@@ -11,9 +11,21 @@ import { persona } from '../model/persona.model';
 export class PersonaService {
 URL = 'https://backendms.onrender.com/personas/';
 
-  constructor (private http: HttpClient) { }
+  constructor (private http : HttpClient) { }
 
-      public getPersona(): Observable<persona>{
-        return this.http.get<persona>(this.URL+ 'traer/perfil');
-            } 
+      // public getPersona(): Observable<persona>{
+      //   return this.http.get<persona>(this.URL+ 'traer/perfil');
+      //       } 
+
+      public lista (): Observable<persona[]>{
+        return this.http.get<persona[]>(this.URL + 'lista');
+          }
+      public detail(id: number):Observable<persona>{      
+          return this.http.get<persona>(this.URL + "detail"  + "/"  + id);
+          }
+       
+        public update(id: number, persona: persona): Observable<any>{
+          return this.http.put<any>(this.URL + "update" + "/" + id, persona); 
+        }
+        
 }
