@@ -34,7 +34,7 @@ export class ExperienciaComponent implements OnInit {
   }
 
   delete(id: number) {
-    if(confirm('Esta seguro desea eliminar esta Experiencia?')){
+    if(confirm('Esta seguro que desea eliminar esta Experiencia?')){
       if(id != undefined){
         this.sExperiencia.delete(id).subscribe(
           data => {

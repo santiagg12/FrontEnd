@@ -34,7 +34,7 @@ cargarSkills(): void{
 }
 
 delete(id: number) {
-  const confirmation = confirm('¿Está seguro de que desea eliminar esta Skill?');
+  const confirmation = confirm('¿Está seguro que desea eliminar esta Skill?');
   if (confirmation) {
     if (id != undefined) {
       this.skillS.delete(id).subscribe(
